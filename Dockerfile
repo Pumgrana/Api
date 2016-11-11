@@ -1,3 +1,10 @@
 FROM ruby:2.2
 
-RUN Bundle install
+ADD . .
+
+RUN bundle install
+RUN chmod +x bin/rails
+
+EXPOSE 9000
+
+ENTRYPOINT ["./docker-entrypoint.sh"]
