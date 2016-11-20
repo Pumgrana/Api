@@ -1,4 +1,4 @@
-PROJECT_NAME := api-plugin
+PROJECT_NAME := pumgrana-api-plugin
 REGISTRY := docker.pumgrana.com
 
 docker:
